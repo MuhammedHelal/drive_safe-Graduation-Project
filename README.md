@@ -1,4 +1,4 @@
-# 🚀 DriveSafe: Autonomous & Cooperative AI System for Next-Gen Road Safety
+# 🚦 DriveSafe: Integrated V2X and AI System for Complete Driver & Road Safety
 
 A highly advanced graduation project that integrates **AI-powered driver monitoring** with **Vehicle-to-Vehicle (V2V) communication** and an **Automated Emergency Response System with Autonomous Control** to protect the driver, notify emergency services, and manage surrounding traffic.
 
@@ -31,9 +31,8 @@ This project required expertise across Mobile, AI, Robotics/Autonomy, and Networ
 
 ### II. Control & Network Communication
 * **Vehicle Control Interface:** Python API for direct communication with the Carla vehicle control system (steering, throttle, brake) when in autonomous mode.
-* **V2V Protocol:** `[...] Specify the peer-to-peer/mesh networking protocol used for V2V communication ...`
-* **Routing Service:** Integration with `[...] Google Maps API / OpenStreetMap / other ...` for dynamic route suggestions.
-* **Real-time Streaming:** `[...] Firebase Realtime Database / MQTT Broker ...` for data sharing with family.
+* **Routing Service:** Integration with Google maps for dynamic route suggestions.
+* **Real-time Streaming:** Firebase Realtime Database and Firebase FCM for data sharing with family.
 
 ### III. Simulation & Testing
 * **Simulator:** **Carla Simulator**
@@ -41,26 +40,23 @@ This project required expertise across Mobile, AI, Robotics/Autonomy, and Networ
 
 ---
 
-## 👨‍💻 My Role: Principal Engineer - Autonomy and Network
+## 👨‍💻 My Role: Full-Stack Mobile Developer & AI Specialist
 
-My primary achievement was designing and implementing the autonomous control loop and the cooperative V2X network logic, transforming the project from a monitoring app into a fully reactive safety system.
+My role encompassed the **entire development lifecycle**, including the creation of the user-facing application, the core safety logic, and the integration of the Machine Learning models. I single-handedly managed the transformation of research concepts into a real-time, functioning safety system.
 
 ### Key Technical Contributions:
 
-1.  **Autonomous Control Logic:** **Designed and implemented the autonomous decision tree** to safely maneuver and park the vehicle upon driver incapacitation.
-2.  **Dynamic Traffic Management Layer:** Developed the backend service that consumes V2V hazard broadcasts and interacts with the routing API to **calculate and disseminate alternative routes**.
-3.  **Critical Safety Protocol Implementation:** Coded the end-to-end sequence for a critical event, ensuring synchronous triggering of the Emergency Autonomy, Ambulance Notification, and V2V Hazard Broadcast.
-4.  **Cross-System Data Harmonization:** Managed data flow from multiple sources (AI models, Smart Watch, V2V Network) into a centralized state management system for accurate safety scoring.
-
----
-
-## 📸 Screenshots & Demonstrations
-
-***(Screenshots will be added here later)***
-
-| Autonomous Parking Sequence | Dynamic Traffic Re-route Alert | Critical Safety Protocol Triggered |
-| :---: | :---: | :---: |
-| _[Placeholder: Screen showing "Autonomous Takeover In Progress: Parking"]_ | _[Placeholder: Map view showing a recommended detour around a disabled vehicle]_ | _[Placeholder: Critical status screen with "Ambulance Alert Sent" and "Autonomous Control Active"]_ |
+1.  **Full Flutter Application Development:**
+    * Designed and implemented the entire **user interface (UI/UX)**, focusing on a driver-friendly, high-contrast, non-distracting experience.
+    * Built the **core application logic**, including state management, local data storage, and asynchronous data processing across multiple threads.
+2.  **AI Model Deployment and Optimization:**
+    * Responsible for the deployment pipeline, including quantization and optimization of the **multiple AI models** for efficient, low-latency execution using **TFLite** within the Flutter environment.
+    * Developed the concurrent processing logic in Dart to handle the real-time camera feed and run multiple AI models simultaneously.
+3.  **Critical System Logic Integration:**
+    * Implemented the proprietary **Sensor Fusion Algorithm** that combines AI predictions, Smart Watch data, and V2V alerts into the single, weighted **Driver Safety Score**.
+    * Coded the **Emergency and Autonomous Control Logic**, including the sequencing of the **Autonomous Takeover**, GPS location capture, and immediate **Ambulance/V2V broadcasts**.
+4.  **External System Integration:**
+    * Managed the communication bridges for the **Carla Simulator**, **V2V Peer-to-Peer Network**, and **Smart Watch data acquisition**, ensuring reliable data exchange across all components.
 
 ---
 
@@ -68,6 +64,8 @@ My primary achievement was designing and implementing the autonomous control loo
 
 **Muhammed Helal**
 * **GitHub:** [MuhammedHelal](https://github.com/MuhammedHelal)
-* **LinkedIn:** `[...] Your LinkedIn Profile Link ...`
+* **LinkedIn:** https://www.linkedin.com/in/mohamed-ashraf-4079a8392/
+* **Phone:** +201033809569
+
 
 Project Link: [https://github.com/MuhammedHelal/drive\_safe](https://github.com/MuhammedHelal/drive_safe)
