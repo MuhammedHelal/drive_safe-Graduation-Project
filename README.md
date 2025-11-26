@@ -1,4 +1,6 @@
-# 🚦 DriveSafe: Integrated V2X and AI System for Complete Driver & Road Safety
+# DriveSafe: Integrated V2X and AI System for Complete Driver & Road Safety
+
+This project, graded **A+**, is my graduation project from the Faculty of Engineering, Helwan University, Software and Systems Department.
 
 A highly advanced graduation project that integrates **AI-powered driver monitoring** with **Vehicle-to-Vehicle (V2V) communication** and an **Automated Emergency Response System with Autonomous Control** to protect the driver, notify emergency services, and manage surrounding traffic.
 
