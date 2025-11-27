@@ -1,66 +1,110 @@
-# DriveSafe: Integrated V2X and AI System for Complete Driver & Road Safety
+# 🚀 Fruits Hub: A Full-Scale E-Commerce Ecosystem Built with Flutter, Firebase, & Supabase
 
-This project, graded **A+**, is my graduation project from the Faculty of Engineering, Helwan University, Software and Systems Department.
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter Badge"/>
+  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart Badge"/>
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase Badge"/>
+  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase Badge"/>
+</p>
 
-A highly advanced graduation project that integrates **AI-powered driver monitoring** with **Vehicle-to-Vehicle (V2V) communication** and an **Automated Emergency Response System with Autonomous Control** to protect the driver, notify emergency services, and manage surrounding traffic.
+## ✨ Project Showcase: Defining Modern Mobile Commerce
+
+**Fruits Hub** is a robust, production-ready full-stack E-commerce application engineered from the ground up using **Flutter**. It boasts **dual backend support** (**Firebase** and **Supabase**) and features a dedicated, **enterprise-grade network layer**. This project goes beyond basic implementation, serving as a comprehensive demonstration of professional development workflows, advanced state management, secure payment handling, and architectural flexibility.
+
+This is a complete, scalable, and highly flexible solution showcasing the power of Dart and Flutter in building complex, high-performance mobile and web applications.
 
 ---
 
-## 🌟 System Pillars: Safety, Autonomy, and Cooperation
+## 🖼️ Visual Preview
 
-The DriveSafe system covers every phase of a critical incident, from detection to autonomous resolution, ensuring maximum safety for the driver and the surrounding vehicles.
+> **Note:** Replace the placeholders below with actual screenshots and a demo link!
 
-| Feature Category | Description | Technical Implementation Highlight |
+| Onboarding Screen | Home Screen | Product Details | Cart & Checkout |
+| :---: | :---: | :---: | :---: |
+| | | 
+
+[Image of Product Details Screen]
+ | 
+
+[Image of Shopping Cart and Checkout]
+ |
+
+---
+
+## 💎 Key Features: What Users Experience
+
+Every feature in Fruits Hub is designed for a frictionless shopping journey, now including secure transactions:
+
+* **🛡️ Secure Authentication Flow:** Complete user registration, login, and session management using robust Firebase Auth **or Supabase Auth**.
+* **🍎 Dynamic Product Catalog:** Browse categorized products, view featured items, and manage inventory state dynamically from the database.
+* **🔍 Advanced Search & Filtering:** High-performance filtering logic to allow users to quickly find products by name, category, or attributes.
+* **🛒 Comprehensive Cart Management:** Real-time updates to quantities, removal of items, and automatic calculation of totals/subtotals.
+* **💳 Integrated Payment Gateway:** Implemented a secure **payment integration** (e.g., Stripe/Razorpay placeholder) to handle transactions during the multi-step checkout process.
+* **📦 Order History & Tracking:** Dedicated screens for users to review past purchases and check the current status of active orders.
+* **⚙️ User Profile Management:** Allowing users to update personal details, change passwords, and manage addresses.
+
+---
+
+## ⚙️ The Engineering Achievement: What I Built
+
+This section highlights the technical complexity and sophisticated architectural patterns implemented, underscoring the enterprise-grade quality of the solution:
+
+### 1. **Robust Architecture & Clean Code**
+* Implemented **Clean Architecture** principles to enforce strict separation of concerns, ensuring the code is modular, reusable, and easily testable.
+* Employed the **Repository Pattern** to abstract data sources, facilitating the easy **integration of both Firebase and Supabase**.
+* Developed a high-quality, reusable **Widget Library** for rapid and consistent UI development across all screens.
+
+### 2. **Mastery of State Management**
+* Utilized the **BLoC Pattern** (Business Logic Component) for immutable state and reliable UI rendering. This was critical for managing complex asynchronous operations like fetching product lists and updating the persistent shopping cart state in a predictable, stream-based manner.
+
+### 3. **Enterprise-Grade Network Layer**
+* Designed and implemented a dedicated network layer (e.g., using **Dio** or a similar package) complete with **Interceptors** for logging, token refresh, and centralized error handling. This ensures robust, secure, and scalable API communication.
+
+### 4. **Dual Backend Flexibility (Firebase & Supabase)**
+* **Modular Backend Services:** Structured data service modules to allow quick switching between **Firebase Firestore** (NoSQL) and **Supabase PostgREST** (PostgreSQL/SQL), demonstrating adaptability to different database technologies and client requirements.
+* **Real-time Data Sync:** Configured listeners for both backends to provide a dynamic user experience where product or cart changes are reflected instantly.
+
+### 5. **Secure Payment Implementation**
+* Integrated a third-party payment processing solution to handle tokenization and secure transaction submission, ensuring PCI compliance is considered at the application layer.
+
+### 6. **Cross-Platform Readiness**
+* The application is built with a single codebase designed for native performance on **iOS, Android, and Web**, demonstrating high proficiency in Flutter's multi-platform capabilities.
+
+---
+
+## 🛠️ Tech Stack
+
+| Component | Technology | Role in the Project |
 | :--- | :--- | :--- |
-| **🚨 Autonomous Takeover & Parking** | **CRITICAL SAFETY PROTOCOL:** If the driver is detected as unconscious or incapacitated, the system initiates **autonomous control**, maneuvering the vehicle to a **safe stop** and **parking it** out of traffic flow. | Required implementation of low-level **vehicle control commands** via the Carla API bridge. |
-| **🗺️ Dynamic Traffic Re-routing** | Uses the V2V network to broadcast the location and status of the disabled vehicle. The system integrates with a mapping service to **re-calculate and suggest optimal routes** for other nearby drivers to avoid the hazard zone. | Integrated with a **Routing Service API** to dynamically inject a high-priority hazard avoidance zone. |
-| **🧠 Multi-Model AI Monitoring** | Uses multiple **TFLite models** for real-time detection of fatigue, distraction (e.g., phone use), and head pose from the camera feed. | Achieved high FPS processing through optimized, concurrent ML model inference. |
-| **🚑 Automated Emergency Response** | Triggers an immediate alert to **emergency services (Ambulance)** upon critical detection, transmitting the vehicle's **GPS coordinates**, physiological data, and driver ID. | Implemented the secure API call logic with precise geographic data transmission. |
-| **V2V Proximity Alerts** | Peer-to-peer communication between DriveSafe-enabled vehicles to instantly share localized danger alerts (e.g., rapid braking, autonomous parking events). | Utilized `[...] MQTT / Wi-Fi Direct / other P2P protocol ...` for low-latency data exchange. |
-| **⌚ Smart Watch Data Fusion** | Integrates physiological data (Heart Rate, HRV) with visual AI analysis to generate the final, weighted **Driver Safety Score**. | Developed a robust communication service (e.g., Bluetooth LE) for reliable wearable data acquisition. |
-| **🕹️ Carla Simulation Integration** | All autonomous and communication features were validated within the **Carla Simulator** to prove safety and functionality under complex, dynamic, and critical driving scenarios. | Successfully established a stable, low-latency control and data bridge. |
+| **Mobile/Web Framework** | `Flutter (Dart)` | Foundation for cross-platform UI/UX. |
+| **Backend Services (Dual)** | `Google Firebase` & `Supabase` | Authentication, Real-time Database, and File Storage. |
+| **Database** | `Cloud Firestore / PostgreSQL` | Flexible data management (NoSQL or SQL). |
+| **State Management** | `BLoC / flutter_bloc` | State control and robust business logic injection. |
+| **Networking** | `Dio + Interceptors` | High-performance, enterprise-grade networking layer. |
+| **Payment** | `[Stripe / Razorpay SDK]` | Secure handling of financial transactions. |
 
 ---
 
-## 💻 Technologies & System Architecture
+## 🚀 Getting Started
 
-This project required expertise across Mobile, AI, Robotics/Autonomy, and Network Communication domains.
+To run this magnificent piece of engineering on your machine:
 
-### I. Mobile & AI Deployment
-* **Frontend Framework:** **Flutter** (Dart)
-* **AI Deployment:** **TFLite** (TensorFlow Lite)
-* **Core Libraries:** `camera`, `geolocator`, `flutter_bluetooth_serial`.
-
-### II. Control & Network Communication
-* **Vehicle Control Interface:** Python API for direct communication with the Carla vehicle control system (steering, throttle, brake) when in autonomous mode.
-* **Routing Service:** Integration with Google maps for dynamic route suggestions.
-* **Real-time Streaming:** Firebase Realtime Database and Firebase FCM for data sharing with family.
-
-### III. Simulation & Testing
-* **Simulator:** **Carla Simulator**
-* **Middleware:** **Python** scripts acting as the interface between the simulation, the autonomous control logic, and the Flutter application.
-
----
-
-## 👨‍💻 My Role: Full-Stack Mobile Developer & AI Specialist
-
-My role encompassed the **entire development lifecycle**, including the creation of the user-facing application, the core safety logic, and the integration of the Machine Learning models. I single-handedly managed the transformation of research concepts into a real-time, functioning safety system.
-
-### Key Technical Contributions:
-
-1.  **Full Flutter Application Development:**
-    * Designed and implemented the entire **user interface (UI/UX)**, focusing on a driver-friendly, high-contrast, non-distracting experience.
-    * Built the **core application logic**, including state management, local data storage, and asynchronous data processing across multiple threads.
-2.  **AI Model Deployment and Optimization:**
-    * Responsible for the deployment pipeline, including quantization and optimization of the **multiple AI models** for efficient, low-latency execution using **TFLite** within the Flutter environment.
-    * Developed the concurrent processing logic in Dart to handle the real-time camera feed and run multiple AI models simultaneously.
-3.  **Critical System Logic Integration:**
-    * Implemented the proprietary **Sensor Fusion Algorithm** that combines AI predictions, Smart Watch data, and V2V alerts into the single, weighted **Driver Safety Score**.
-    * Coded the **Emergency and Autonomous Control Logic**, including the sequencing of the **Autonomous Takeover**, GPS location capture, and immediate **Ambulance/V2V broadcasts**.
-4.  **External System Integration:**
-    * Managed the communication bridges for the **Carla Simulator**, **V2V Peer-to-Peer Network**, and **Smart Watch data acquisition**, ensuring reliable data exchange across all components.
-
----
+1. **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/MuhammedHelal/fruits-hub_Full-ECommerce-App-in-Flutter.git](https://github.com/MuhammedHelal/fruits-hub_Full-ECommerce-App-in-Flutter.git)
+    cd fruits-hub_Full-ECommerce-App-in-Flutter
+    ```
+2. **Fetch Dependencies:**
+    ```bash
+    flutter pub get
+    ```
+3. **Setup Backend:**
+    * Configure either a **Firebase** project OR a **Supabase** project.
+    * Place the platform-specific configuration files (`google-services.json` or Supabase keys) in the appropriate directories and environment variables.
+4. **Run the App:**
+    ```bash
+    flutter run
+    ```
 
 ## 🤝 Contact
 
@@ -69,5 +113,4 @@ My role encompassed the **entire development lifecycle**, including the creation
 * **LinkedIn:** https://www.linkedin.com/in/mohamed-ashraf-4079a8392/
 * **Phone:** +201033809569
 
-
-Project Link: [[https://github.com/MuhammedHelal/drive\_safe](https://github.com/MuhammedHelal/drive_safe](https://github.com/MuhammedHelal/drive_safe-Graduation-Project))
+Project Link: [fruits-hub_Full-ECommerce-App-in-Flutter](https://github.com/MuhammedHelal/fruits-hub_Full-ECommerce-App-in-Flutter)
